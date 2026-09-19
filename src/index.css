@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  background-color: #0a0a0a !important;
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: marquee-infinite 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-infinite-scroll:hover,
+.animate-infinite-scroll:active {
+  animation-play-state: paused;
+}

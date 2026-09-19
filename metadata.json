@@ -1,0 +1,6 @@
+{
+  "name": "Página 8 Ball Pool Expert",
+  "description": "Página de alta conversão para o guia e painel VIP de 8 Ball Pool com dicas de mira, estratégias avançadas e garantia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
