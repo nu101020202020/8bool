@@ -8,7 +8,6 @@ import GuaranteeSection from './components/GuaranteeSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import CheckoutModal from './components/CheckoutModal';
-import ExitIntentModal from './components/ExitIntentModal';
 import RecentPurchaseToast from './components/RecentPurchaseToast';
 import { PricingPlan } from './types';
 
@@ -69,11 +68,6 @@ export default function App() {
       <CheckoutModal
         plan={selectedPlan}
         onClose={() => setSelectedPlan(null)}
-      />
-
-      {/* Exit-Intent Promotion Modal: triggers when user intends to leave */}
-      <ExitIntentModal
-        onAcceptOffer={(discountedPlan) => setSelectedPlan(discountedPlan)}
       />
     </div>
   );
